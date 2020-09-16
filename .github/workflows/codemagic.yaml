@@ -6,5 +6,10 @@ workflows:
         environment:
             flutter: dev
         scripts:
-            - flutter packages pub get
-            - flutter test
+            - echo 'previous step'
+            - name: 'Flutter drive web test'
+        script: |
+            chromedriver --port=4444 &
+            flutter config --enable-web
+            flutter drive --target=test_driver/button_pressing.dart -d chrome --browser-name chrome --release
+              
