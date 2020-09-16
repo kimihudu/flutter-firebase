@@ -1,0 +1,26 @@
+name: Dart CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image:  google/dart:latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Configure Flutter
+      run: |
+        flutter config --enable-web
+        flutter pub get
+    - name: Run tests
+      run: pub run test
+    - name: build web
+      run: flutter build web
+
+
