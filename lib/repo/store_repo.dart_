@@ -1,0 +1,22 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'store_request.dart';
+import 'package:grocery_app/models/models.dart';
+
+class StoreRepo {
+  StoreRepo() : super();
+
+  Future<dynamic> reqWorker(String fileName) async {
+    return StoreRequest().reqWorker(fileName);
+  }
+
+  //get Worker from
+  Future<List<dynamic>> getWorker(String phoneNo) async {
+    return StoreRequest().reqWorker(phoneNo);
+  }
+
+  Future<List<Product>> fetchProdsByCat() async {
+    return StoreRequest().reqProds();
+  }
+}

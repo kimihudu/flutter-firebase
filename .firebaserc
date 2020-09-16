@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "s3s-flutter",
+    "dev": "s3s-flutter"
+  },
+  "targets": {
+    "s3s-flutter": {
+      "hosting": {
+        "farmerlink": [
+          "farmerlink"
+        ]
+      }
+    }
+  }
+}

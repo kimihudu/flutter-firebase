@@ -1,0 +1,48 @@
+import 'dart:convert';
+import 'dart:io' as io;
+import 'package:firebase_core/firebase_core.dart';
+import 'package:grocery_app/constants/setting.dart';
+import 'package:grocery_app/helper/ultis.dart';
+import 'package:http/http.dart' as http;
+
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:grocery_app/models/models.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+class StoreRequest {
+  final prodCollection = Firestore.instance.collection('products');
+
+  Future<dynamic> reqWorker(String fileName) async {
+    var data;
+    //detect on web or device
+    if (kIsWeb) {
+      var _webdata = await http.get(
+        AppSetting.luckyServerReq + fileName,
+        headers: {'Access-Control-Allow-Origin': '*'},
+      );
+      if (_webdata.statusCode == 200) {
+        //042420lk - verify phone by pin
+        var pinCallbackFrServer = jsonDecode(_webdata.body)['pin'];
+        data = pinCallbackFrServer;
+        Helper.debugLog(
+            'Worker_request > reqWorker web callback', pinCallbackFrServer);
+        // Helper.debugLog('lucky server callback - Worker', WorkerResponse);
+      } else {
+        Helper.debugLog('Worker_request > reqWorker web callback > fail',
+            _webdata.statusCode);
+      }
+    }
+    return data;
+  }
+
+  Future<List<Product>> reqProds() async {
+    List<Product> _list = List();
+    var tmp = prodCollection.snapshots().map((_snapshot) {
+      return _snapshot.documents
+          .map((doc) => Product.fromSnapshot(doc))
+          .toList();
+    });
+    _list = await tmp.first; //<-- get the first data in stream
+    return _list;
+  }
+}

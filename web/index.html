@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="google-signin-client_id" content="984838772349-b17qdfa76rtc8b7u38dmb525itba8mn4.apps.googleusercontent.com" />
+    <title>Grocery App</title>
+</head>
+
+<body>
+    <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/flutter_service_worker.js');
+            });
+        }
+    </script>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: 'AIzaSyDijChjqWcCk0w65OMN5MFtzCrjVJ9r5lM',
+            authDomain: '', //<your-auth-domain>
+            databaseURL: "https://s3s-flutter.firebaseio.com",
+            storageBucket: 'gs://s3s-flutter.appspot.com',
+            projectId: 's3s-flutter',
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //firebase.initializeApp();
+    </script>
+    <script src="main.dart.js" type="application/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+[{
+    "products": [{
+        "sku": "109",
+        "name": "MIKE TYSON",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "61.25",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "109",
+        "name": "MIKE TYSON",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "61.25",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "109",
+        "name": "MIKE TYSON",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "61.25",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "109",
+        "name": "MIKE TYSON",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "61.25",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "0",
+        "name": "RETURN CLIENT - DISCOUNT 20%",
+        "qTy": "",
+        "weight": "",
+        "price": "-49.00",
+        "rate": "",
+        "prodNote": ""
+    }],
+    "id": "1316",
+    "date": "06 17 WED",
+    "cusPhone": "5192404335",
+    "cusName": "MARK",
+    "cusEmail": "lkphandev@gmail.com",
+    "shipAddr": "190 Cedar Street, Cambridge",
+    "total": "196.00",
+    "status": "delivered",
+    "orderNote": "",
+    "locID": "PC01",
+    "telno": "416-848-2881",
+    "web": ""
+}, {
+    "products": [{
+        "sku": "126",
+        "name": "Purple Afghani",
+        "qTy": "1",
+        "weight": "14.0g",
+        "price": "72.50",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "126",
+        "name": "Purple Afghani",
+        "qTy": "1",
+        "weight": "14.0g",
+        "price": "72.50",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "0",
+        "name": "DISCOUNT",
+        "qTy": "",
+        "weight": "",
+        "price": "-30.00",
+        "rate": "",
+        "prodNote": ""
+    }],
+    "id": "3303",
+    "date": "07 11 SAT-12:08",
+    "cusPhone": "4165770656",
+    "cusName": "MARK ARAUJO",
+    "cusEmail": "lkphandev@gmail.com",
+    "shipAddr": "4 Lisa St, BRAMPTON",
+    "total": "115.00",
+    "status": "delivered",
+    "orderNote": "",
+    "locID": "PC01",
+    "telno": "416-848-2881",
+    "web": ""
+}, {
+    "products": [{
+        "sku": "161",
+        "name": "BUBBA KUSH",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "55.00",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "161",
+        "name": "BUBBA KUSH",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "55.00",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "161",
+        "name": "BUBBA KUSH",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "55.00",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "161",
+        "name": "BUBBA KUSH",
+        "qTy": "1",
+        "weight": "7.0g",
+        "price": "55.00",
+        "rate": "",
+        "prodNote": ""
+    }, {
+        "sku": "0",
+        "name": "DISCOUNT",
+        "qTy": "",
+        "weight": "",
+        "price": "-70.00",
+        "rate": "",
+        "prodNote": ""
+    }],
+    "id": "3322",
+    "date": "07 11 SAT-02:32",
+    "cusPhone": "4086248949",
+    "cusName": "JASS",
+    "cusName": "lkphandev@gmail.com",
+    "shipAddr": "6 Silver Maple Crt, BRAMPTON",
+    "total": "150.00",
+    "status": "delivered",
+    "orderNote": "",
+    "locID": "PC01",
+    "telno": "416-848-2881",
+    "web": ""
+}]
