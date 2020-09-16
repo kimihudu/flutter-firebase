@@ -1,3 +1,5 @@
+## Status
+![Test Build](https://github.com/kimihudu/flutter-firebase/workflows/Test%20Build/badge.svg?event=push)
 # Grocery App
 
 A web flutter project responsive on mobile.
