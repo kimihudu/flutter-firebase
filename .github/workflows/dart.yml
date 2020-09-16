@@ -14,6 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: subosito/flutter-action@v1
+      with:
+        channel: 'beta' # or: 'stable' or 'dev' or 'beta'
     - name: Configure Flutter
       run: |
         flutter config --enable-web
